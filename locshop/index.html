@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nearby Location</title>
+  </head>
+  <body>
+    <h1>Nearby Museum</h1>
+    {% if locshop %}
+    <ul>
+    {% for loc in locshop %}
+        <li>
+          <p>
+            {{ loc.name }}: {{ loc.distance }}
+          </p>
+        </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+  </body>
+</html>
